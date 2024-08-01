@@ -5,7 +5,7 @@ import soundfile as sf
 def listen():  # Слушает пользователя
     """
     Listen user
-    :return: lstening result
+    :return: listening result
     """
     print("Говорите")
     audio_data2 = sd.rec(int(16000 * 8), 16000, channels=1)
