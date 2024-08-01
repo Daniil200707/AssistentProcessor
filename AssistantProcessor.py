@@ -3,6 +3,7 @@ from memory import ShortcutMemory, LongTermMemory
 from feelings import *
 from threading import Thread
 
+
 def main():
     """
     Main func
