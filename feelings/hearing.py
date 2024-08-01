@@ -7,7 +7,7 @@ def listen():  # Слушает пользователя
     Listen user
     :return: listening result
     """
-    print("Говорите")
+    print("Говоріть...")
     audio_data2 = sd.rec(int(16000 * 8), 16000, channels=1)
     sd.wait()
 
@@ -18,7 +18,7 @@ def listen():  # Слушает пользователя
     audio_data2, sample_rate = sf.read("../recorded_audio.wav")
     print(f"Вы сказали: {audio_data2}")
 
-    model = vosk.Model("feelings/vosk-model-small-ru-0.22")
+    model = vosk.Model("feelings/speech-recognition-uk-master/archives/Ukrainian Open Speech To Text Dataset.rar.torrent")
 
     recognizer = vosk.KaldiRecognizer(model, 16000)
     with open("../recorded_audio.wav", "rb") as audio_file:
